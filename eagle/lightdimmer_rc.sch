@@ -7560,6 +7560,7 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <part name="T1" library="transistor" deviceset="*-NPN-" device="TO92-CBE" technology="BC238" value="BC238"/>
 <part name="R2" library="rcl" deviceset="R-EU_" device="0204/7" value="560"/>
 <part name="R3" library="rcl" deviceset="R-EU_" device="0204/7" value="10K"/>
+<part name="R4" library="rcl" deviceset="R-EU_" device="0204/7" value="2K2"/>
 </parts>
 <sheets>
 <sheet>
@@ -7580,6 +7581,7 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <instance part="T1" gate="G$1" x="50.8" y="35.56"/>
 <instance part="R2" gate="G$1" x="53.34" y="50.8" rot="R90"/>
 <instance part="R3" gate="G$1" x="81.28" y="63.5"/>
+<instance part="R4" gate="G$1" x="106.68" y="91.44" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -7591,9 +7593,10 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <pinref part="U$2" gate="G$1" pin="VCC"/>
 <wire x1="55.88" y1="83.82" x2="68.58" y2="83.82" width="0.1524" layer="91"/>
 <wire x1="114.3" y1="86.36" x2="111.76" y2="86.36" width="0.1524" layer="91"/>
-<wire x1="111.76" y1="86.36" x2="111.76" y2="91.44" width="0.1524" layer="91"/>
-<wire x1="111.76" y1="91.44" x2="55.88" y2="91.44" width="0.1524" layer="91"/>
-<wire x1="55.88" y1="91.44" x2="55.88" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="111.76" y1="86.36" x2="111.76" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="111.76" y1="99.06" x2="106.68" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="106.68" y1="99.06" x2="55.88" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="55.88" y1="99.06" x2="55.88" y2="83.82" width="0.1524" layer="91"/>
 <junction x="55.88" y="83.82"/>
 <pinref part="R1" gate="G$1" pin="1"/>
 <wire x1="58.42" y1="81.28" x2="55.88" y2="81.28" width="0.1524" layer="91"/>
@@ -7606,6 +7609,9 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <pinref part="C1" gate="G$1" pin="1"/>
 <wire x1="55.88" y1="76.2" x2="55.88" y2="78.74" width="0.1524" layer="91"/>
 <junction x="55.88" y="78.74"/>
+<pinref part="R4" gate="G$1" pin="2"/>
+<wire x1="106.68" y1="96.52" x2="106.68" y2="99.06" width="0.1524" layer="91"/>
+<junction x="106.68" y="99.06"/>
 </segment>
 </net>
 <net name="N$4" class="0">
@@ -7662,6 +7668,9 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <wire x1="106.68" y1="78.74" x2="106.68" y2="63.5" width="0.1524" layer="91"/>
 <pinref part="R3" gate="G$1" pin="2"/>
 <wire x1="106.68" y1="63.5" x2="86.36" y2="63.5" width="0.1524" layer="91"/>
+<pinref part="R4" gate="G$1" pin="1"/>
+<wire x1="106.68" y1="78.74" x2="106.68" y2="86.36" width="0.1524" layer="91"/>
+<junction x="106.68" y="78.74"/>
 </segment>
 </net>
 <net name="N$11" class="0">
